@@ -1,0 +1,69 @@
+.course-card {
+  width: 100%;
+  max-width: 390px;
+  margin-inline: auto;
+
+  border-radius: 4px;
+  border: 1px solid #e5e8ed;
+  background-color: #fff;
+  box-shadow:
+          0 4px 4px rgba(31, 33, 44, 0.03),
+          0 12px 10px rgba(154, 156, 165, 0.04);
+
+  &__image-wrapper {
+    background-color: #ffcb3c;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  &__body {
+    padding: 18px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__badge {
+    align-self: flex-start;
+    padding: 4px 10px;
+    border-radius: var(--radius-pill);
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+
+  &__badge_theme-marketing   { background-color: #16a34a; }
+  &__badge_theme-management  { background-color: #2563eb; }
+  &__badge_theme-hr          { background-color: #f97316; }
+  &__badge_theme-design      { background-color: #ec4899; }
+  &__badge_theme-development { background-color: #6366f1; }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 8px;
+    font-size: 14px;
+    color: var(--color-text-muted);
+  }
+
+  &__price {
+    color: #ef4444;
+    font-weight: 600;
+  }
+
+  &__separator {
+    opacity: 0.5;
+  }
+}
+

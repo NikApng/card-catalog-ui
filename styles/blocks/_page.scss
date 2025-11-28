@@ -1,0 +1,7 @@
+.page {
+  background-color: var(--color-bg-page);
+
+  &__main {
+    padding-block: clamp(40px, 8vh, 80px);
+  }
+}

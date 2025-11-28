@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Our online courses</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles/main.css" />
+</head>
+<body class="page">
+<main class="page__main">
+    <section class="courses">
+        <div class="courses__inner">
+            <header class="courses__header">
+                <p class="courses__eyebrow">Enjoy your studying!</p>
+                <h1 class="courses__title">Our online courses</h1>
+            </header>
+
+            <div class="courses__top">
+                <div class="courses__filters" data-role="filters">
+                    <button class="courses__filter courses__filter_active" type="button" data-category="all">
+                        <span class="courses__filter-label">All</span>
+                        <span class="courses__filter-count">0</span>
+                    </button>
+                    <button class="courses__filter" type="button" data-category="marketing">
+                        <span class="courses__filter-label">Marketing</span>
+                        <span class="courses__filter-count">0</span>
+                    </button>
+                    <button class="courses__filter" type="button" data-category="management">
+                        <span class="courses__filter-label">Management</span>
+                        <span class="courses__filter-count">0</span>
+                    </button>
+                    <button class="courses__filter" type="button" data-category="hr">
+                        <span class="courses__filter-label">HR &amp; Recruiting</span>
+                        <span class="courses__filter-count">0</span>
+                    </button>
+                    <button class="courses__filter" type="button" data-category="design">
+                        <span class="courses__filter-label">Design</span>
+                        <span class="courses__filter-count">0</span>
+                    </button>
+                    <button class="courses__filter" type="button" data-category="development">
+                        <span class="courses__filter-label">Development</span>
+                        <span class="courses__filter-count">0</span>
+                    </button>
+                </div>
+
+                <form class="courses__search" data-role="search-form" autocomplete="off">
+                    <input
+                            class="courses__search-input"
+                            type="search"
+                            name="query"
+                            placeholder="Search course..."
+                            data-role="search-input"
+                    />
+                    <button class="courses__search-button" type="submit">
+                        <img src="./assets/icons/search.svg" alt="" class="courses__search-icon" />
+                    </button>
+                </form>
+            </div>
+
+            <div class="courses__list" id="courses-list" data-role="courses-list">
+
+            </div>
+
+            <div class="courses__bottom">
+                <button class="courses__load-more" type="button" data-role="load-more">
+                    Load more
+                </button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="./scripts/data.js"></script>
+<script src="./scripts/catalog.js"></script>
+</body>
+</html>
